@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProCourse — Learn Faster, Build Smarter</title>
+  <meta name="description" content="A modern course website template: syllabus, curriculum, schedule, pricing, and enrollment." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" class="brand-icon"><path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" /></svg>
+        <span>ProCourse</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#instructor">Instructor</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><button class="btn small ghost" id="themeToggle" aria-label="Toggle theme">🌓</button></li>
+          <li><a class="btn small" href="#enroll" id="openEnroll">Enroll</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Master Frontend in 6 Weeks</h1>
+        <p class="lead">A project-first course that takes you from fundamentals to deploy—HTML, CSS, and modern JavaScript with hands-on builds.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#courses">Browse Courses</a>
+          <a class="btn ghost" href="#curriculum">View Curriculum</a>
+        </div>
+        <div class="badges">
+          <span>⭐ 4.9/5 rating</span>
+          <span>🎓 3,200+ learners</span>
+          <span>✅ Job-ready projects</span>
+        </div>
+      </div>
+      <div class="hero-media" role="img" aria-label="Preview of course projects">
+        <!-- Placeholder image; replace with your own -->
+        <img src="assets/hero-preview.png" alt="Course project previews" />
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Courses -->
+    <section class="section" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <h2 id="courses-title">Popular Courses</h2>
+        <p class="section-lead">Pick a track or mix and match individual modules.</p>
+
+        <div class="grid cards">
+          <!-- Course Card 1 -->
+          <article class="card">
+            <img src="assets/course-html.png" alt="HTML & Semantic Web course cover" />
+            <div class="card-body">
+              <h3>HTML & Semantic Web</h3>
+              <p>Accessibility-first HTML, forms, SEO basics, and clean structure.</p>
+              <ul class="meta">
+                <li>⏱ 10 hrs</li>
+                <li>Beginner</li>
+                <li>🧩 12 lessons</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#curriculum">View</a>
+                <button class="btn small ghost enrollBtn" data-course="HTML & Semantic Web">Enroll</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course Card 2 -->
+          <article class="card">
+            <img src="assets/course-css.png" alt="CSS Mastery course cover" />
+            <div class="card-body">
+              <h3>CSS Mastery</h3>
+              <p>Layouts with Grid & Flexbox, responsive systems, and animations.</p>
+              <ul class="meta">
+                <li>⏱ 14 hrs</li>
+                <li>Intermediate</li>
+                <li>🧩 18 lessons</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#curriculum">View</a>
+                <button class="btn small ghost enrollBtn" data-course="CSS Mastery">Enroll</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course Card 3 -->
+          <article class="card">
+            <img src="assets/course-js.png" alt="Modern JavaScript course cover" />
+            <div class="card-body">
+              <h3>Modern JavaScript</h3>
+              <p>ES6+, DOM, fetch, state patterns, and component architecture.</p>
+              <ul class="meta">
+                <li>⏱ 20 hrs</li>
+                <li>Intermediate</li>
+                <li>🧩 24 lessons</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#curriculum">View</a>
+                <button class="btn small ghost enrollBtn" data-course="Modern JavaScript">Enroll</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="section alt" id="curriculum" aria-labelledby="curriculum-title">
+      <div class="container">
+        <h2 id="curriculum-title">Curriculum Overview</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <h3>Week 1 — Foundations</h3>
+              <p>Semantic HTML, accessibility, forms, and responsive basics.</p>
+              <ul>
+                <li>Project: Personal Portfolio</li>
+                <li>Assessment: HTML Quiz</li>
+              </ul>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <h3>Week 2 — CSS Layouts</h3>
+              <p>Flexbox, Grid, fluid typography, and design tokens.</p>
+              <ul>
+                <li>Project: Landing Page</li>
+                <li>Assessment: CSS Lab</li>
+              </ul>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <h3>Week 3 — JavaScript Essentials</h3>
+              <p>ES modules, DOM, fetch, and state.</p>
+              <ul>
+                <li>Project: Dashboard Widgets</li>
+              </ul>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <h3>Weeks 4–6 — Capstone</h3>
+              <p>Build a full, accessible, responsive single‑page app and deploy.</p>
+              <ul>
+                <li>Project: Course SPA</li>
+                <li>Assessment: Final Review + Demo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor -->
+    <section class="section" id="instructor" aria-labelledby="instructor-title">
+      <div class="container instructor">
+        <div>
+          <img class="avatar" src="assets/instructor.jpg" alt="Photo of the instructor" />
+        </div>
+        <div>
+          <h2 id="instructor-title">Meet Your Instructor</h2>
+          <p>Hi! I’m Alex, a frontend engineer and educator who loves building delightful, accessible interfaces. I’ve mentored 1,000+ devs breaking into the industry.</p>
+          <ul class="checks">
+            <li>10+ years in production UI</li>
+            <li>Former mentor @ community bootcamps</li>
+            <li>Focus on real-world projects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section alt" id="schedule" aria-labelledby="schedule-title">
+      <div class="container">
+        <h2 id="schedule-title">Live Session Schedule</h2>
+        <div class="table-wrap" role="region" aria-labelledby="schedule-title" tabindex="0">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Time (IST)</th>
+                <th scope="col">Mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sept 2</td>
+                <td>Kickoff & Setup</td>
+                <td>7:00–8:30 PM</td>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>Sept 5</td>
+                <td>HTML Deep Dive</td>
+                <td>7:00–8:30 PM</td>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>Sept 9</td>
+                <td>CSS Layouts</td>
+                <td>7:00–8:30 PM</td>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>Sept 12</td>
+                <td>JavaScript Essentials</td>
+                <td>7:00–9:00 PM</td>
+                <td>Online</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">All sessions are recorded and shared with lifetime access.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Pricing</h2>
+        <div class="grid pricing">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price"><span class="currency">₹</span>2,499</p>
+            <ul class="checks">
+              <li>All course videos</li>
+              <li>Project templates</li>
+              <li>Community access</li>
+            </ul>
+            <button class="btn enrollBtn" data-course="Starter Plan">Choose Starter</button>
+          </article>
+
+          <article class="price-card featured" aria-label="Recommended plan">
+            <div class="badge">Popular</div>
+            <h3>Pro</h3>
+            <p class="price"><span class="currency">₹</span>4,999</p>
+            <ul class="checks">
+              <li>Everything in Starter</li>
+              <li>Weekly live Q&A</li>
+              <li>1:1 project feedback</li>
+            </ul>
+            <button class="btn enrollBtn" data-course="Pro Plan">Choose Pro</button>
+          </article>
+
+          <article class="price-card">
+            <h3>Team</h3>
+            <p class="price"><span class="currency">₹</span>12,999</p>
+            <ul class="checks">
+              <li>Seats for 5 members</li>
+              <li>Private cohort</li>
+              <li>Custom support</li>
+            </ul>
+            <button class="btn enrollBtn" data-course="Team Plan">Choose Team</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section alt" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">What Learners Say</h2>
+        <div class="grid quotes">
+          <blockquote>
+            <p>“Clear explanations and powerful projects. I landed interviews in 3 weeks.”</p>
+            <footer>— Priya S.</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Loved the accessibility mindset. My portfolio finally looks professional.”</p>
+            <footer>— Arjun K.</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Concise, practical, and fun. The live Q&As were gold.”</p>
+            <footer>— Megha R.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <div class="accordion" role="region" aria-labelledby="faq-title">
+          <details>
+            <summary>Do I need prior experience?</summary>
+            <p>No. We start from HTML/CSS basics and level up quickly with hands-on tasks.</p>
+          </details>
+          <details>
+            <summary>Are there assignments?</summary>
+            <p>Yes — short assessments and three projects, including a capstone app.</p>
+          </details>
+          <details>
+            <summary>Can I get a certificate?</summary>
+            <p>Yes. Complete the final assessment to receive a shareable certificate.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" class="brand-icon"><path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" /></svg>
+          <span>ProCourse</span>
+        </a>
+        <p class="muted">Build skills with real projects. Ship your best work.</p>
+      </div>
+      <form class="newsletter" id="newsletter" aria-label="Newsletter signup">
+        <label for="email" class="visually-hidden">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required />
+        <button class="btn small" type="submit">Subscribe</button>
+        <p class="note tiny" id="newsMsg" role="status" aria-live="polite"></p>
+      </form>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container legal tiny">© <span id="year"></span> ProCourse. All rights reserved.</div>
+  </footer>
+
+  <!-- Enroll Modal -->
+  <div class="modal" id="enrollModal" aria-hidden="true" role="dialog" aria-labelledby="enrollTitle" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <h3 id="enrollTitle">Enroll Now</h3>
+      <form id="enrollForm">
+        <div class="field">
+          <label for="course">Course</label>
+          <input id="course" name="course" type="text" readonly />
+        </div>
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email2">Email</label>
+          <input id="email2" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX" />
+        </div>
+        <button class="btn" type="submit">Submit</button>
+        <p class="note tiny" id="enrollMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

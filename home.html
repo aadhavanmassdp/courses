@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCourses - Learn Anytime</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Extra homepage styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #0056b3;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .course-preview {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .course-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .course-card:hover {
+            transform: scale(1.03);
+        }
+        .course-card img {
+            width: 100%;
+        }
+        footer {
+            background: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo"><h2>MyCourses</h2></div>
+        <div>
+            <a href="index.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="courses.html">Courses</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Learn New Skills Anytime, Anywhere</h1>
+        <p>Access high-quality courses and track your progress like Udemy</p>
+        <a href="courses.html"><button style="padding:10px 20px;margin-top:10px;background:white;color:#0056b3;border:none;border-radius:4px;font-weight:bold;">Browse Courses</button></a>
+    </section>
+
+    <!-- Course Preview -->
+    <section class="course-preview">
+        <h2>Popular Courses</h2>
+        <div class="course-grid" id="homepageCourses"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 MyCourses. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Fetch from videos.json
+        fetch('videos.json')
+        .then(res => res.json())
+        .then(courses => {
+            let grid = document.getElementById('homepageCourses');
+            courses.slice(0, 3).forEach(c => {
+                let card = document.createElement('div');
+                card.className = "course-card";
+                card.innerHTML = `
+                    <img src="${c.thumbnail}" alt="${c.title}">
+                    <div style="padding:10px;">
+                        <h3>${c.title}</h3>
+                        <p>${c.description}</p>
+                        <a href="courses.html"><button style="padding:5px 10px;background:#0056b3;color:white;border:none;border-radius:4px;">View</button></a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>
