@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 id="courseTitle"></h1>
+  <button onclick="logout()">Logout</button>
+</header>
+<div class="course-container">
+    <div class="video-section">
+        <video id="courseVideo" width="100%" controls></video>
+    </div>
+    <div class="lesson-list">
+        <h2>Lessons</h2>
+        <ul id="lessonList"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
